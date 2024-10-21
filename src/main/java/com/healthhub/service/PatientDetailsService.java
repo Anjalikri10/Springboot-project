@@ -16,10 +16,12 @@ public class PatientDetailsService {
     PatientDetailsRepository repository;
 
     public PatientDetails addPatient(PatientDetails details) {
+
         return repository.save(details);
     }
 
     public List<PatientDetails> getAllDetails() {
+
         return repository.findAll();
     }
 }
