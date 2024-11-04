@@ -1,6 +1,5 @@
 package com.healthhub.entity;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,19 +8,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class DoctorDetail {
+public class LabTest {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long dr_id;
-    private String name;
-    private String email;
-    private String mob;
-    private String qualification;
-    private String specialization;
-    private String experience;
+    private long test_id;
+    private String test_name;
+    private double test_fee;
 }
